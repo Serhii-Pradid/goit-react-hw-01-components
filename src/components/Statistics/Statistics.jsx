@@ -1,6 +1,17 @@
 import PropTypes from 'prop-types';
 import css from './Statistics.module.css';
 
+// цю функцію знайшов в інтернеті
+
+function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+};
+
 
 export const Statistic = ({ title, stats }) => {
    
@@ -14,6 +25,7 @@ export const Statistic = ({ title, stats }) => {
         <li 
         className={css.item} 
         key={id}
+        style={{ backgroundColor: getRandomColor() }}
         >
       <span className={css.label}>{label}</span>
       <span className={css.percentage}>{percentage}</span>

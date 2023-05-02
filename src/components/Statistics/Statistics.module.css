@@ -24,19 +24,17 @@
 .statList {
     display: flex;
     justify-content: space-evenly;
-    width: inherit;
-    margin: auto;
-    padding-top: 15px;
-    background-color: rgb(194, 184, 170);
+    width: 370px;
+    padding:0;
+    
 }
 
 .item {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    padding: 15px;
+    width: inherit;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 15px;
 }
 
 .label {
