@@ -3,10 +3,13 @@ table {
     margin-top: 30px;
     box-shadow: 0 0 10px #c6cccced;
     border-radius: 2px;
+    
     }
 
-thead {
+    thead {
     background-color: aqua;
+    border-collapse: collapse;
+        border: 1px solid #666;
 }
 
 table th {
@@ -19,8 +22,10 @@ table th {
 table tr {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 3px;
+    
     border-spacing: 10px;
+    border-collapse: collapse;
+    border: 1px solid #666;
     
 }
 
@@ -31,5 +36,6 @@ color: rgb(99, 96, 96);
 }
 
 tbody tr {
-    background-color: rgb(240, 226, 226)
+    background-color: rgb(240, 226, 226);
+    margin-bottom: 5px;
 }
